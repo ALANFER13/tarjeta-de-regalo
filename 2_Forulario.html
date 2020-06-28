@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ <meta charset="utf-8">
+ <title>Votos</title>
+</head>
+<body>
+	<section>
+		<form action="#" method="post" name="formu">
+			<h1>Registro de censo publico</h1>
+			<h1>Seleccione la zona de ciudad en la que vive</h1>
+			<select name="nombre">
+				<option value="Norte">Norte</option>
+				<option value="Sur">Sur</option>
+				<option value="Este">Este</option>
+				<option value="Oeste">Oeste</option>
+				<option value="Centro">Centro</option>
+			</select>
+			<input type="button" onclick="votar();" value="Votar" >
+		</form>
+		<article id="mensaje"></article>
+	</section>
+	<script type="text/javascript">
+		function votar(){
+			switch (document.formu.nombre.value) {
+				case "Norte":
+				document.getElementById("mensaje").innerHTML="Gracias por votar desde el Norte";break;
+				case "Sur":
+				document.getElementById("mensaje").innerHTML="Gracias por votar desde el Sur";break;
+				case "Este":
+				document.getElementById("mensaje").innerHTML="Gracias por votar desde el Este";break;
+				case "Oeste":
+				document.getElementById("mensaje").innerHTML="Gracias por votar desde el Oeste";break;
+				case "Centro":
+				document.getElementById("mensaje").innerHTML="Gracias por votar desde el Centro";break;
+
+			}
+		}
+	</script>
+
+</body>
+</html>

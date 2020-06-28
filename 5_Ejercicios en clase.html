@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Funciones</title>
+</head>
+<body>
+	
+<textarea cols="20" rows="10" id="salida"></textarea>
+<input type="button" value="suma" onclick="Sumar();"/>
+<input type="button" value="restar" onclick="Restar();"/>
+<input type="button" value="multiplicar" onclick="Multiplicar();"/>
+<input type="button" value="dividir" onclick="Dividir();"/>
+<script type="text/javascript">
+	var n1=9; var n2=16;
+	function Sumar(){
+	document.getElementById("salida").innerHTML=n1+n2;
+	}
+	function Restar(){
+	document.getElementById("salida").innerHTML=n2-n1;
+	}
+	function Multiplicar(){
+	document.getElementById("salida").innerHTML=n1*n2;
+	}
+	function Dividir(){
+	document.getElementById("salida").innerHTML=n1/n2;
+	}
+</script>
+</body>
+</html>
+
+
+

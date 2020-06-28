@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Articles</title>
+</head>
+<body onload="ciclo();">
+<script type="text/javascript">
+	var i=prompt("¿Cuantos articles desea crear?");
+	var a=1;
+	if(i<=8){
+		while(a<=i){
+		document.write('<article id="article1" style="background-color:#10375c">'+'<FONT COLOR="#f3c623">Caja'+a+'</FONT>'+'<article>');
+		a++;
+		}
+				
+	}
+	if(i>=9){
+	 while(a<=i){
+
+	 document.write('<article id="article2" style="background-color:#f3c623">'+'<FONT COLOR="#10375c">Caja'+a+'</FONT>'+'<article>');
+	 a++;
+		}
+				
+	}
+
+</script>
+<style type="text/css">
+	#article2{
+			
+  	display: inline-flex;
+	}
+</style>
+</body>
+</html>
